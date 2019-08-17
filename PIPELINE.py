@@ -13,13 +13,13 @@ parser.add_argument('--reference', '-r', action = 'store', default = 'n/p', dest
 parser.add_argument('--ForwardRead', '-R1', action = 'store', default = 'n/p', dest = 'ForwardRead')
 parser.add_argument('--ReverseRead', '-R2', action = 'store', default = 'n/p', dest = 'ReverseRead')
 parser.add_argument('--Remove', '-rm', action = 'store', default = 'False', dest = 'remove')
-parser.add_argument('--species', '-rm', action = 'store', default = 'False', dest = 'species')
+parser.add_argument('--species', '-sp', action = 'store', default = 'False', dest = 'species')
 ###########################################################
 
 print(sys.argv)
 
 def Get_species(isolate):
-	'If no species is given as input, read them from a Design'
+    'If no species is given as input, read them from a Design'
     print("Getting species of isolated")
     species = "None"
     with open("Design.csv","r") as Design:
@@ -29,7 +29,7 @@ def Get_species(isolate):
                 species = l[2]
     return species
 def Download_ncbi(species, output, type):
-	'Download NCBI complete genomes of a species'
+    'Download NCBI complete genomes of a species'
     species_translation = {
     "s.aureus": "Staphylococcus aureus", "Neisseria sp.":"Neisseria sp.", "S. arlettae": "Staphylococcus arlettae", 
     "S. saprophyticus": "Staphylococcus saprophyticus", "S.haemolyticus":"Staphylococcus haemolyticus" }
@@ -72,10 +72,10 @@ if metagenome != "n/p":
         metagenome_RR = args.ReverseRead
         
 reference = args.reference
-if args.species == "n/p"
-	Genus = Get_species(name)
+if args.species == "n/p":
+     Genus = Get_species(name)
 else:
-	Genus = args.species
+     Genus = args.species
 
 #Input Check
 if Genus == "None": 

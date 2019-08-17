@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-module load bwa/0.7.10
-module load samtools/1.9
+#module load bwa/0.7.10
+#module load samtools/1.9
 
 REF=$1
 F_READ=$2
