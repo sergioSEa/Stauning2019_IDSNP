@@ -1,5 +1,5 @@
 # Stauning2019_IDSNP
-Pipeline used in Stauning et al in order to identify genetic variants unique to a bacterial isolate that are present in a metagenome.  
+Pipeline used in Stauning et al in order to identify genetic variants unique to a bacterial isolate that are present in a metagenome. Please keep it mind that this pipeline was produced to be run in a specific experimental setting and changes might be needed to make it work in other settings. 
 
 Software requeriments (versions used for the manuscrit):  
  * Python 3 or above  
