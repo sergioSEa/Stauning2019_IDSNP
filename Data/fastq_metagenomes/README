@@ -1,0 +1,3 @@
+Information about directory:
+	Fastq files of metagenomes go here. 
+		Format: forward reads should have a prefix _R2.fastq.gz , reverse reads should have a suffix _R2.fastq.gz

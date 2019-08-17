@@ -1,0 +1,13 @@
+OUT=$1
+GENUS=$2
+SPECIES=$3
+TYPE=$4
+
+if [ $TYPE == "draft" ]; then
+echo " ncbi-genome-download -F fasta --genus \"$GENUS $SPECIES\" bacteria --parallel 4 -o $OUT "| bash
+else
+
+echo " ncbi-genome-download -F fasta -l $TYPE --genus \"$GENUS $SPECIES\" bacteria --parallel 4 -o $OUT "| bash
+fi
+
+#ncbi-genome-download -F fasta -l complete --genus \"$GENUS $SPECIES\" bacteria --parallel 4 -o $OUT
