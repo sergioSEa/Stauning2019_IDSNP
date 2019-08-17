@@ -16,10 +16,12 @@ python Pipeline.py --isolate [Name genome assembly] --metagenome [prefix fq file
 Required:
  * Isolate: Specify name of file. Fasta file should be placed in Data/WGS_Assemblies/  
  * metagenome: Name of the metagenome. If no Forward and Reverse reads are given as input, files matching the metagenome name will be searched in Data/fastq_metagenomes  
- * Species: Name that will be downloaded from NCBI
-Optional:
+ * Species: Name that will be downloaded from NCBI  
+ 
+Optional:  
   * Remove: Removes intermediates
   * Reference: If not given, it will be randomly picked up from the available NCBI genomes
+  * ForwardRead, ReverseRead: If no path is given, files matching metagenome name in Data/fastq_,etagenomes will be chosen.
 
   
  
